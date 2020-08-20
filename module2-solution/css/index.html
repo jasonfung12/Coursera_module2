@@ -10,25 +10,31 @@ p {
 	width: 80px;
 	height: 30px;
 	border: 1px solid black;
-	margin-bottom: 10px
 }
 #title1 {
 	background-color: #982057;
 	position: relative;
 	float: right;
+	bottom: 17px;
+	text-align: center;
 }
 #title2 {
 	background-color: #686873;
 	position: relative;
 	float: right;
+	bottom: 17px;
+	text-align: center;
 }
 #title3 {
 	background-color: #783593;
 	position: relative;
 	float: right;
+	bottom: 17px;
+	text-align: center;
 }
 section {
 	clear: right;
+	margin: 8px;
 }
 h1 {
 	text-align: center;
@@ -36,21 +42,25 @@ h1 {
 div#container {
 	border: 1px solid black;
 	background-color: #937451;
+	height: 150px;
+	margin: 10px;
 }
-
+div#box {
+	margin:8px;
+}
 @media (min-width: 992px) {
 	.col-lg-1, .col-lg-2, .col-lg-3 {
 		float: left;
 		border: 1px black;
 	}
 	.col-lg-1{
-		width: 33%;
+		width: 31%;
 	}
 	.col-lg-2{
-		width: 50%;
+		width: 47%;
 	}
 	.col-lg-3{
-		width: 100%;
+		width: 95%;
 	}
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -59,13 +69,13 @@ div#container {
 		border: 1px black;
 	}
 	.col-md-1{
-		width: 33%;
+		width: 31%;
 	}
 	.col-md-2{
-		width: 50%;
+		width: 47%;
 	}
 	.col-md-3{
-		width: 100%;
+		width: 96.5%;
 	}
 }
 @media (max-width: 767px) {
@@ -74,22 +84,22 @@ div#container {
 		border: 1px black;
 	}
 	.col-sm-1{
-		width: 33%;
+		width: 31%;
 	}
 	.col-sm-2{
-		width: 50%;
+		width: 47%;
 	}
 	.col-sm-3{
-		width: 100%;
+		width: 95%;
 	}
 }
 </style>
 </head>
 <body>
 <h1>Our Menu</h1>
-<div class="row">
+<div id="box">
 	<div id="container" class="col-lg-1 col-md-2 col-sm-3" ><p id="title1">Chicken</p><section>Chicken soup is very tasty! Chicken soup is very tasty! Chicken soup is very tasty! Chicken soup is very tasty! Chicken soup is very tasty!  </section></div>
 	<div id="container" class="col-lg-1 col-md-2 col-sm-3" ><p id="title2">Beef</p><section>I like beef! I like beef! I like beef! I like beef! I like beef! I like beef! I like beef! I like beef! I like beef! I like beef! I like beef! </section></div>
-	<div id="container" class="col-lg-1 col-md-2 col-sm-3" ><p id="title3">Sushi</p><section>Sushi is yummy!! Sushi is yummy!! Sushi is yummy!! Sushi is yummy!! Sushi is yummy!! Sushi is yummy!! </section></div>
+	<div id="container" class="col-lg-1 col-md-3 col-sm-3" ><p id="title3">Sushi</p><section>Sushi is yummy!! Sushi is yummy!! Sushi is yummy!! Sushi is yummy!! Sushi is yummy!! Sushi is yummy!! </section></div>
 </body>
 </html>
